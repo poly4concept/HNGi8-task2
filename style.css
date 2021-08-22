@@ -434,7 +434,8 @@ h3 {
   .resume {
     overflow-x: hidden;
     width: 100vw;
-    margin: 0 ;
+    margin: 0;
+    padding-right: 5px;
     box-shadow: 0px 0px var(--black);
   }
    .resume .base .contact div i{
