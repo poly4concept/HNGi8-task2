@@ -472,19 +472,20 @@ h3 {
   .resume .func .skills {
     clear: both;
     background: var(--darker-blue);
-    padding: 5px;
+    padding: 10px;
     margin: 15px 0 0;
     width: 100%;
     height: auto;
   }
-  .skills ul {
+  .resume .func .skills ul {
     display: flex;
     flex-direction: column;
     justify-content: start;
   }
-  .skills ul li{
+  .resume .func .skills ul li{
     margin: 0;
     padding: 0;
+    height: 5.8rem;
   }
   .resume .func .skills h3 {
     font-size: 18px;
@@ -494,7 +495,7 @@ h3 {
     position: absolute;
     display: block;
     width: 100%;
-    top: 44%;
+    top: 60%;
     transition-duration: 0.3s;
   }
   circle {
@@ -506,20 +507,21 @@ h3 {
   font-size: 1.3rem;
 }
 
-  .resume .func .interests {
+  .resume .base .interests {
   background: var(--darker-blue);
   margin: 15px 0 0;
   padding: 15px;
 }
-.resume .func .interests-item {
+.resume .base .interests-items {
   box-sizing: border-box;
-  padding: 0 0 15px;
+  padding: 0 0 20px;
   width: 100%;
   text-align: center;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
-.resume .func .interests-items div {
+.resume .base .interests-items div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -528,25 +530,14 @@ h3 {
   height: 100px;
   border-radius: 50%;
 }
-.resume .func .interests-items div:hover i {
-  transform: scale(1.2);
-}
-.resume .func .interests-items div:hover span {
-  color: var(--yellow);
-  transition-duration: 0.3s;
-}
-.resume .func .interests-items div i {
+.resume .base .interests-items div i {
   font-size: 45px;
   width: 60px;
   height: 60px;
   line-height: 60px;
-  color: var(--orange) !important;
+  color: var(--orange);
   transition-duration: 0.3s;
 }
-.resume .func .interests-items div span {
-  display: block;
-}
-
 
 #web{
   display: none;
