@@ -319,7 +319,7 @@ h3 {
 .resume .func .skills {
   clear: both;
   background: var(--darker-blue);
-  padding: 15px;
+  padding: 5px;
   margin: 15px 0 0;
 }
 .resume .func .skills ul {
@@ -350,6 +350,7 @@ h3 {
 .resume .func .skills ul li svg circle {
   stroke-width: 1px;
   stroke: var(--white);
+  height: 50px;
 }
 .resume .func .skills ul li svg .cbar {
   stroke-width: 3px;
@@ -407,6 +408,9 @@ h3 {
 .resume .func .interests-items div span {
   display: block;
 }
+.mobile{
+  display: none;
+}
 .hng{
     margin-top: 3rem;
     display: flex;
@@ -425,4 +429,132 @@ h3 {
 }
 .hng a:hover{
     color: black
+}
+@media only screen and (max-width: 768px) {
+  .resume {
+    width: 100vw;
+    margin: 0 ;
+    box-shadow: 0px 0px var(--black);
+  }
+   .resume .base .contact div i{
+    margin-right: 5px;
+  } 
+  .work-edu{
+    display: flex;
+    flex-direction: column;
+    margin-right: -5px;
+  }
+  .resume .func .work {
+    width: 98%;
+  }
+  .resume .func .edu {
+    width: 98%;
+  }
+  .resume .base {
+    width: 100%;
+    padding: 30px 10px;
+  }
+  .resume .func {
+    padding: 30px;
+    padding-right: 8px;
+  }
+  .resume .func h3 i {
+    margin-bottom: 10px;
+  }
+  .resume .func .work ul li,
+  .resume .func .edu ul li {
+    position: relative;
+    margin-left: 5px;
+    padding-left: 25px;
+    padding-bottom: 15px;
+  }
+  .resume .func .skills {
+    clear: both;
+    background: var(--darker-blue);
+    padding: 5px;
+    margin: 15px 0 0;
+    width: 100%;
+    height: auto;
+  }
+  .skills ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  .skills ul li{
+    margin: 0;
+    padding: 0;
+  }
+  .resume .func .skills h3 {
+    font-size: 18px;
+  }
+  .resume .func .skills ul li span,
+  .resume .func .skills ul li small {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 44%;
+    transition-duration: 0.3s;
+  }
+  circle {
+    transform-origin: center center;
+    stroke-width: 4px;
+    transform:scale(0.4, 0.4);
+  }
+  .resume .func .skills ul li i{
+  font-size: 1.3rem;
+}
+
+  .resume .func .interests {
+  background: var(--darker-blue);
+  margin: 15px 0 0;
+  padding: 15px;
+}
+.resume .func .interests-item {
+  box-sizing: border-box;
+  padding: 0 0 15px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+.resume .func .interests-items div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.resume .func .interests-items div:hover i {
+  transform: scale(1.2);
+}
+.resume .func .interests-items div:hover span {
+  color: var(--yellow);
+  transition-duration: 0.3s;
+}
+.resume .func .interests-items div i {
+  font-size: 45px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  color: var(--orange) !important;
+  transition-duration: 0.3s;
+}
+.resume .func .interests-items div span {
+  display: block;
+}
+
+
+#web{
+  display: none;
+} 
+.mobile{
+  display: block;
+}
+
+  .hng a{
+    color: red;
+  }
 }
